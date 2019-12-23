@@ -8,6 +8,7 @@
   margin: 40px auto;
 }
 
+
 .calculator {
   width: 100%;
   padding: 40px;
@@ -22,9 +23,11 @@
   align-items: flex-end;
   justify-content: flex-end;
   margin: 25px auto;
+  padding: 0 8%;
   height: 100px;
   width: 100%;
   border-radius: 50px;
+  cursor: default;
   color: white;
   font-size: 5.0rem;
   background-color: #322c2d;
@@ -53,7 +56,7 @@
   justify-content: center;
       align-items: center;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   cursor: pointer;
   user-select: none;
   width: 90px;
