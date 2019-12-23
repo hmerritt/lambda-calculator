@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   width: 550px;
   margin: 40px auto;
@@ -6,28 +10,75 @@
 
 .calculator {
   width: 100%;
+  padding: 40px;
   border-radius: 15px;
-  padding-bottom: 25px;
   border: 2px solid grey;
   background-color: #c00025;
 }
 
-.logo-container {
-  margin: 40px;
-}
 
 .display {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  margin: 0 auto;
-  margin-top: 25px;
+  margin: 25px auto;
   height: 100px;
-  width: 450px;
+  width: 100%;
   border-radius: 50px;
   color: white;
-  padding-right: 8%;
   font-size: 5.0rem;
   background-color: #322c2d;
   box-shadow: 1px 1px #322c2d;
-  }
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.buttons .left {
+  width: 75%;
+}
+.buttons .specials,
+.buttons .numbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+      align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  user-select: none;
+  width: 90px;
+  height: 90px;
+  margin: 5px 10px 5px 10px;
+  border-radius: 100%;
+  background-color: #323335;
+  box-shadow: 0 3px 0 0 rgba(0,0,0, .4);
+}
+
+.btn[char="0"] {
+  width: 200px;
+  border-radius: 80px;
+}
+
+.buttons .operators .btn {
+  margin-bottom: 10px;
+}
+
+.buttons .numbers .btn {
+  background-color: #184379;
+}
+.buttons .specials .btn {
+  background-color: #225D9E;
+}
+.buttons .operators .btn {
+  background-color: #237293;
+}
