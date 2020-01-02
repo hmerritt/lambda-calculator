@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 550px;
+  width: 520px;
   margin: 40px auto;
 }
 
@@ -27,6 +27,7 @@
   height: 100px;
   width: 100%;
   border-radius: 50px;
+  overflow: hidden;
   cursor: default;
   color: white;
   font-size: 5.0rem;
@@ -59,29 +60,39 @@
   font-size: 1.6rem;
   cursor: pointer;
   user-select: none;
-  width: 90px;
-  height: 90px;
-  margin: 5px 10px 5px 10px;
+  width: 80px;
+  height: 80px;
+  margin: 7px 10px 7px 10px;
   border-radius: 100%;
   background-color: #323335;
   box-shadow: 0 3px 0 0 rgba(0,0,0, .4);
+  -webkit-transition: all 80ms ease;
+          transition: all 80ms ease;
+}
+.btn:hover {
+  opacity: .9;
+  box-shadow: 0 4px 0 0 rgba(0,0,0, .6);
+}
+.btn:active {
+  opacity: .9;
+  box-shadow: 0 2px 0 0 rgba(0,0,0, .4);
 }
 
 .btn[char="0"] {
-  width: 200px;
+  width: 180px;
   border-radius: 80px;
 }
 
 .buttons .operators .btn {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .buttons .numbers .btn {
   background-color: #184379;
 }
 .buttons .specials .btn {
-  background-color: #225D9E;
+  background-color: #2061B0;
 }
 .buttons .operators .btn {
-  background-color: #237293;
+  background-color: #3D94FF;
 }
