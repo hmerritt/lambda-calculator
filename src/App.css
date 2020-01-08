@@ -1,22 +1,98 @@
-.container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+
+* {
+  box-sizing: border-box;
 }
+
+.container {
+  width: 520px;
+  margin: 40px auto;
+}
+
+
+.calculator {
+  width: 100%;
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  background-color: #c00025;
+}
+
+
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 25px auto;
+  padding: 0 8%;
+  height: 100px;
+  width: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: default;
+  color: white;
+  font-size: 5.0rem;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.buttons .left {
+  width: 75%;
+}
+.buttons .specials,
+.buttons .numbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+      align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  user-select: none;
+  width: 80px;
+  height: 80px;
+  margin: 7px 10px 7px 10px;
+  border-radius: 100%;
+  background-color: #323335;
+  box-shadow: 0 3px 0 0 rgba(0,0,0, .4);
+  -webkit-transition: all 80ms ease;
+          transition: all 80ms ease;
+}
+.btn:hover {
+  opacity: .9;
+  box-shadow: 0 4px 0 0 rgba(0,0,0, .6);
+}
+.btn:active {
+  opacity: .9;
+  box-shadow: 0 2px 0 0 rgba(0,0,0, .4);
+}
+
+.btn[char="0"] {
+  width: 180px;
+  border-radius: 80px;
+}
+
+.buttons .operators .btn {
+  margin-bottom: 14px;
+}
+
+.buttons .numbers .btn {
+  background-color: #184379;
+}
+.buttons .specials .btn {
+  background-color: #2061B0;
+}
+.buttons .operators .btn {
+  background-color: #3D94FF;
+}
